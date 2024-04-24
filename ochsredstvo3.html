@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PowderCloud - Раскрой себя</title>
+
+  <link rel="stylesheet" href="./assets/css/styleuxod1.css">
+
+  <!-- 
+    - ссылки на гугл шрифты
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="preload" as="image" href="./assets/images/logo.png">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-3.jpg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header">
+
+    <div class="alert">
+      <div class="container">
+        <p class="alert-text">Красота в твоих глазах</p>
+      </div>
+    </div>
+
+    <div class="header-top" data-header>
+      <div class="container">
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+
+        <div class="input-wrapper">
+          <input type="search" name="search" placeholder="Найти продукцию" class="search-field">
+
+          <button class="search-submit" aria-label="search">
+            <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.png" width="220" height="50" alt="PowderCloud">
+        </a>
+
+        <div class="header-actions">
+
+          <button class="header-action-btn" aria-label="user">
+            
+            <a href="авторизация/avto.html" class="navbar-link" data-nav-link>
+              <ion-icon name="person-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
+            </a>
+
+          </button>
+
+          <button class="header-action-btn" aria-label="favourite item">
+            <a href="корзина/index.html" class="navbar-link" data-nav-link><ion-icon name="star-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
+            </a>
+          </button>
+
+        </div>
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+
+            <li>
+              <a href="index.html"   class="navbar-link has-after">Главная</a>
+            </li>
+
+            <li>
+              <a href="index.html" id="collection" class="navbar-link has-after">Каталог</a>
+            </li>
+
+            <li>
+              <a href="aboutcompany.html" class="navbar-link has-after">О нас</a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+
+  </header>
+
+
+  <!-- 
+    - #MOBILE NAVBAR
+ -->
+  <div class="sidebar">
+    <div class="mobile-navbar" data-navbar>
+
+      <div class="wrapper">
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.png"width="220" height="50" >
+        </a>
+
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="navbar-list">
+
+        <li>
+          <a href="index.html" class="navbar-link" data-nav-link>Главная</a>
+        </li>
+
+        <li>
+          <a href="index.html" id="collection" class="navbar-link" data-nav-link>Каталог</a>
+        </li>
+        <li>
+          <a href="aboutcompany.html" class="navbar-link" data-nav-link>О нас</a>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <div class="overlay" data-nav-toggler data-overlay></div>
+  </div>
+ 
+
+  
+  <main>
+
+
+      <!-- 
+        - #SHOP
+      
+-->
+      <div class="categories" id="shop" aria-label="shop" data-section>
+        <div class="category">
+              <div class="shop-card">
+                <div class="card-banner img-holder" >
+
+                  <img id="kartinka" src="./assets/images/14.webp" loading="lazy" alt="Facial cleanser" class="img-cover">
+                    <script>
+                    let i = "0";
+                    arr = ["14", "15"];
+                    function gallery()
+                    {
+                    if(i == arr.length){i="0";}
+                    kartinka.src='./assets/images/'+arr[i]+'.webp';
+                    i++;
+                    }
+                    </script>
+
+                    <div class="card-actions">
+
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to whishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button onclick="gallery()" class="action-btn" aria-label="compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    </div>
+                </div>
+                <div class="price">
+                    <span class="span">400 руб.</span>
+                  </div>
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">7 отзывов</p>
+
+                  </div>
+              </div>
+                <div class="category_left">
+                    <h4 class="category_title">Тонизирующие гидрогелевые патчи с экстрактом кофе для области вокруг глаз</h4>
+                    <p class="category_text"> Свойства:<br>
+                        - возвращают взгляду свежесть и дарят заряд бодрости без особых усилий.<br><br>
+                        Преимущества:<br>
+                        - содержат экстракт кофе, обладающий тонизирующими свойствами;<br>
+                        - гидрогелевая основа идеально ложится на кожу и дарит мгновенное ощущение комфорта;<br>
+                        - невесомая освежающая гелевая текстура обеспечивает легкость нанесения.<br><br>
+
+                        Для еще большего освежающего эффекта рекомендуется хранить маску в холодильнике.<br>
+
+                        Протестировано дерматологами. 
+
+                    </p>    
+                </div>   
+            </div>
+    </article>
+  </main>
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" data-section>
+    <div class="container">
+
+      <div class="footer-top">
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Компания</p>
+          </li>
+
+          <li>
+            <p class="footer-list-text">
+              Смотрите ближайший к Вам магазин в <a href="#" class="link">Наши магазины</a>
+            </p>
+          </li>
+
+          <li>
+            <p class="footer-list-text bold">+7 (987) 654-32-10</p>
+          </li>
+
+          <li>
+            <p class="footer-list-text">hello@mail.ru</p>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Полезные ссылки</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Служба поддержки</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Бестселлеры</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Вопрос-ответ</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Подарочные карты</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Информация</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Оформление возврата</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Контакты</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Оплата</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Доставка</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Политика обработки данных</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list">
+
+          <p class="newsletter-title">Хороший email :)</p>
+
+          <p class="newsletter-text">
+            Введите свой адрес электронной почты ниже, чтобы первыми узнавать о новых коллекциях и выпусках продуктов.
+            
+          </p>
+
+          <form action="" class="newsletter-form">
+            <input type="email" name="email_address" placeholder="Введите Ваш электронный адрес" required
+              class="email-field">
+
+            <button type="submit" class="btn btn-primary">Подписаться</button>
+          </form>
+
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <div class="wrapper">
+          <p class="copyright">
+            &copy; 2024 
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-vk"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.png" width="220" height="50" alt="PowderCloud">
+        </a>
+
+        <img src="./assets/images/pay.png" width="313" height="28" alt="available all payment method" class="w-100">
+
+      </div>
+
+    </div>
+  </footer>
+
+<!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+  </a>
+
+  <!-- 
+    - js ссылка
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon (иконки) ссылки
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

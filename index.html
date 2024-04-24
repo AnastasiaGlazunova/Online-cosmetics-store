@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PowderCloud - Раскрой себя</title>
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - ссылки на гугл шрифты
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="preload" as="image" href="./assets/images/logo.png">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-3.jpg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header">
+
+    <div class="alert">
+      <div class="container">
+        <p class="alert-text">Красота в твоих глазах</p>
+      </div>
+    </div>
+
+    <div class="header-top" data-header>
+      <div class="container">
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+
+        <div class="input-wrapper">
+          <input type="search" name="search" placeholder="Найти продукцию" class="search-field">
+
+          <button class="search-submit" aria-label="search">
+            <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.png" width="220" height="50" alt="PowderCloud">
+        </a>
+
+        <div class="header-actions">
+
+          <button class="header-action-btn" aria-label="user">
+            
+            <a href="авторизация/avto.html" class="navbar-link" data-nav-link>
+              <ion-icon name="person-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
+            </a>
+
+          </button>
+
+          <button class="header-action-btn" aria-label="favourite item">
+            <a href="корзина/index.html" class="navbar-link" data-nav-link><ion-icon name="star-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
+            </a>
+          </button>
+
+          <!--<button class="header-action-btn" aria-label="cart item">
+            <data class="btn-text" value="0"></data>
+
+            <ion-icon name="bag-handle-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
+
+            <span class="btn-badge">0</span>
+          </button>-->
+
+        </div>
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+
+            <li>
+              <a href="index.html" class="navbar-link has-after">Главная</a>
+            </li>
+
+            <li>
+              <a href="#collection" class="navbar-link has-after">Каталог</a>
+            </li>
+
+            <li>
+              <a href="aboutcompany.html" class="navbar-link has-after">О нас</a>
+            </li>
+
+           <!--<li>
+              <a href="reviews.html" class="navbar-link has-after">Отзывы</a>
+            </li>--> 
+
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+
+  </header>
+
+   <!--
+    - #MOBILE NAVBAR
+ -->
+  <div class="sidebar">
+    <div class="mobile-navbar" data-navbar>
+
+      <div class="wrapper">
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.png"width="220" height="50" >
+        </a>
+
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="navbar-list">
+
+        <li>
+          <a href="#home" class="navbar-link" data-nav-link>Главная</a>
+        </li>
+
+        <li>
+          <a href="#collection" class="navbar-link" data-nav-link>Каталог</a>
+        </li>
+
+        <li>
+          <a href="aboutcompany.html" class="navbar-link" data-nav-link>О нас</a>
+        </li>
+
+        <!--<li>
+          <a href="reviews.html" class="navbar-link" data-nav-link>Отзывы</a>
+        </li>--> 
+
+      </ul>
+
+    </div>
+
+    <div class="overlay" data-nav-toggler data-overlay></div>
+  </div>
+ 
+
+  <main>
+    <article>
+
+      <!-- 
+        - #ГЛАВНЫЙ БАННЕР
+      -->
+
+      <section class="section hero" id="home" aria-label="hero" data-section>
+        <div class="container">
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="hero-card has-bg-image" style="background-image: url('./assets/images/hero-banner-1.jpg')">
+
+                <div class="card-content">
+
+                  <h1 class="h1 hero-title">
+                    Весеннее вдохновение <br>
+                    Новая коллекция
+                  </h1>
+
+                  <p class="hero-text">
+                    Почувствуйте приближение тепла вместе с изысканной лимитированной коллекцией<br> Days In Bloom/Расцвет молодости.
+                  </p>
+
+                  <p class="price"></p>
+
+                  <a href="#" class="btn btn-primary">За покупками</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="hero-card has-bg-image" style="background-image: url('./assets/images/hero-banner-2.jpeg')">
+
+                <div class="card-content">
+
+                  <h1 class="h1 hero-title">
+                    Новая коллекция<br>
+                    Яркие 90-e
+                  </h1>
+
+                  <p class="hero-text">
+                    Буйство красок для новых эмоций. Многофункциональные продукты с высококачественными формулами.
+                  </p>
+
+                  <p class="price"></p>
+
+                  <a href="#" class="btn btn-primary">Посмотреть</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="hero-card has-bg-image" style="background-image: url('./assets/images/hero-banner-3.jpg')">
+
+                <div class="card-content">
+
+                  <h1 class="h1 hero-title">
+                    Линейка<br>
+                    шампуней LOVE
+                  </h1>
+
+                  <p class="hero-text">
+                    Подходит натуральным волосам и поддерживает яркость красных оттенков окрашенных волос. Обеспечивает комплексный уход.
+                  </p>
+
+                  <p class="price"></p>
+
+                  <a href="#" class="btn btn-primary">Купить сейчас</a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #COLLECTION - КАТАЛОГ
+      -->
+
+      <section class="section collection" id="collection" aria-label="collection" data-section>
+        <div class="container">
+
+          <ul class="collection-list">
+
+            <li>
+              <div class="collection-card has-before hover:shine">
+
+                <h2 class="h2 card-title">Макияж</h2>
+
+                <p class="card-text"></p>
+
+                <a href="makeup.html" class="btn-link">
+                  <span class="span">Перейти к просмотру</span>
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+                <div class="has-bg-image" style="background-image: url('./assets/images/collection-1.jpg')"></div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="collection-card has-before hover:shine">
+
+                <h2 class="h2 card-title">Уход</h2>
+
+                <p class="card-text"></p>
+
+                <a href="uxod.html" class="btn-link">
+                  <span class="span">Перейти к просмотру</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+                <div class="has-bg-image" style="background-image: url('./assets/images/collection-2.jpg')"></div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="collection-card has-before hover:shine">
+
+                <h2 class="h2 card-title">Для волос</h2>
+
+                <p class="card-text"></p>
+
+                <a href="for_hair.html" class="btn-link">
+                  <span class="span">Перейти к просмотру</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+                <div class="has-bg-image" style="background-image: url('./assets/images/collection-37.jpg')"></div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #ДОП БАННЕРЫ
+      -->
+
+      <section class="section banner" aria-label="banner" data-section>
+        <div class="container">
+
+          <ul class="banner-list">
+
+            <li>
+              <div class="banner-card banner-card-1 has-before hover:shine">
+
+                <p class="card-subtitle">Новая коллекция</p>
+
+                <h2 class="h2 card-title">Открой для себя наш весенний уход за кожей</h2>
+
+                <a href="#" class="btn btn-secondary">Показать больше</a>
+
+                <div class="has-bg-image" style="background-image: url('./assets/images/banner-1.jpg')"></div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="banner-card banner-card-2 has-before hover:shine">
+
+                <h2 class="h2 card-title">25% на ВСЕ</h2>
+
+                <p class="card-text">
+                  Макияж с расширенной цветовой гаммой.
+                </p>
+
+                <a href="#" class="btn btn-secondary">Распродажа</a>
+
+                <div class="has-bg-image" style="background-image: url('./assets/images/banner-2.jpg')"></div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #ОСОБЕННОСТИ МАГАЗИНА
+      -->
+
+      <section class="section feature" aria-label="feature" data-section>
+        <div class="container">
+
+          <h2 class="h2-large section-title">Почему Вам стоит выбрать нашу продукцию?</h2>
+
+          <ul class="flex-list">
+
+            <li class="flex-item">
+              <div class="feature-card">
+
+                <img src="./assets/images/feature-1.png" width="204" height="236" loading="lazy" alt="Guaranteed PURE"
+                  class="card-icon">
+
+                <h3 class="h3 card-title">Органическая продукция</h3>
+
+                <p class="card-text">
+                  Наша продукция изготовлена из натуральных компонентов высокого качества от ведущих мировых производителей косметического сырья.
+                </p>
+
+              </div>
+            </li>
+
+            <li class="flex-item">
+              <div class="feature-card">
+
+                <img src="./assets/images/feature-2.png" width="204" height="236" loading="lazy"
+                  alt="Completely Cruelty-Free" class="card-icon">
+
+                <h3 class="h3 card-title">Возможность экономии</h3>
+
+                <p class="card-text">
+                  Промокоды на скидки, регулярные акции со скидками и подарками, баллы за отзывы, которыми можно расплачиваться при заказе. (Только после регистрации.) 
+                </p>
+
+              </div>
+            </li>
+
+            <li class="flex-item">
+              <div class="feature-card">
+
+                <img src="./assets/images/feature-3.png" width="204" height="236" loading="lazy"
+                  alt="Ingredient Sourcing" class="card-icon">
+
+                <h3 class="h3 card-title">Доставка по всей России</h3>
+
+                <p class="card-text">
+                  Красота не имеет границ! А чтобы все покупки доехали до Вас в целости и сохранности, мы используем современные упаковочные материалы.
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" data-section>
+    <div class="container">
+
+      <div class="footer-top">
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Компания</p>
+          </li>
+
+          <li>
+            <p class="footer-list-text">
+              Смотрите ближайший к Вам магазин в <a href="#" class="link">Наши магазины</a>
+            </p>
+          </li>
+
+          <li>
+            <p class="footer-list-text bold">+7 (987) 654-32-10</p>
+          </li>
+
+          <li>
+            <p class="footer-list-text">hello@mail.ru</p>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Полезные ссылки</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Служба поддержки</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Бестселлеры</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Вопрос-ответ</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Подарочные карты</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Информация</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Оформление возврата</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Контакты</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Оплата</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Доставка</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Политика обработки данных</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list">
+
+          <p class="newsletter-title">Хороший email :)</p>
+
+          <p class="newsletter-text">
+            Введите свой адрес электронной почты ниже, чтобы первыми узнавать о новых коллекциях и выпусках продуктов.
+            
+          </p>
+
+          <form action="" class="newsletter-form">
+            <input type="email" name="email_address" placeholder="Введите Ваш электронный адрес" required
+              class="email-field">
+
+            <button type="submit" class="btn btn-primary">Подписаться</button>
+          </form>
+
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <div class="wrapper">
+          <p class="copyright">
+            &copy; 2024 
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-vk"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.png" width="220" height="50" alt="PowderCloud">
+        </a>
+
+        <img src="./assets/images/pay.png" width="313" height="28" alt="available all payment method" class="w-100">
+
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+  </a>
+
+  <!-- 
+    - js ссылка
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon (иконки) ссылки
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
